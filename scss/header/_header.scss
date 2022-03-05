@@ -1,0 +1,13 @@
+.header {
+    background: black;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+
+    &.logo__img {
+        background: url('../assets/icons/logo.png') no-repeat;
+        height: 50px;
+        width: 50px;
+    }
+}
