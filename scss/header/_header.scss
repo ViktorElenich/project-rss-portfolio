@@ -1,13 +1,50 @@
+$font-style: 'Inter', sans-serif;
+
 .header {
-    background: black;
+    height: 90px;
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container__header {
+    padding: 15px 10px;
     height: 90px;
     display: flex;
     justify-content: space-between;
-    padding: 15px 10px;
+    align-items: center;
 
+    
     &.logo__img {
         background: url('../assets/icons/logo.png') no-repeat;
         height: 50px;
         width: 50px;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        font-family: $font-style;
+        color: #fff;
+        margin-right: 30px;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            color: #BDAE82;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }

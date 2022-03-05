@@ -1,0 +1,150 @@
+$font-merri: 'Merriweather', serif;
+$font-inter: 'Inter', serif;
+
+.hero__container {
+    background-image: url('../assets/bg.png');
+    background-repeat: no-repeat;
+    background-position: center -90px;
+    height: 820px;
+}
+
+.about__hero {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding-top: 160px;
+    padding-left: 80px;
+
+    h1 {
+        font-family: $font-merri;
+        font-size: 60px;
+        color: #fff;
+        height: 100px;
+    }
+
+    p {
+        font-family: $font-inter;
+        font-size: 20px;
+        font-style: italic;
+        color: #fff;
+        height: 100px;
+    }
+
+    button {
+        width: 220px;
+        height: 55px;
+        background: #BDAE82;
+        color: black;
+        border-radius: 10px;
+
+        &:hover {
+            color: #fff;
+            transition: all 0.3s ease-out;
+            border: 4px solid black;
+        }
+    }
+}
+
+.skills__container {
+    padding: 100px 20px 0;
+    height: 420px;
+    background: black;
+}
+
+.title__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-family: $font-merri;
+        font-size: 40px;
+        color: #BDAE82;
+        position: relative;
+
+        span {
+            display: inline-block;
+            margin: 0 .4em;
+
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                border-top: 2px solid #BDAE82;
+                margin-top: .6em;
+            }
+
+            &::before {
+                margin-left: -102%;
+            }
+
+            &::after {
+                margin-left: 2%;
+            }
+        }
+    }
+}
+
+.about__skills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+
+    .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 320px;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .img__skill {
+        width: 62px;
+        height: 50px;
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-family: $font-inter;
+        color: #fff;
+    }
+
+    p {
+        font-size: 16px;
+        font-family: $font-inter;
+        color: #fff;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .photo__skill {
+        background: url('../assets/icons/camera\ 1.png') no-repeat center center;
+        background-size: contain;
+    }
+
+    .video__skill {
+        background: url('../assets/icons/video\ 1.png') no-repeat center center;
+        background-size: contain;
+    }
+
+    .retouch__skill {
+        background: url('../assets/icons/image\ 1.png') no-repeat center center;
+        background-size: contain;
+    }
+
+    .audio__skill {
+        background: url('../assets/icons/mic\ 1.png') no-repeat center center;
+        background-size: contain;
+    }
+}
+
+.portfolio__container {
+    background: black;
+    height: 600px;
+    padding-top: 100px;
+}

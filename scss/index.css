@@ -1,7 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Merriweather:wght@700&display=swap");
 .header {
-  background: black;
+  height: 90px;
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container__header {
+  padding: 15px 10px;
   height: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,18 +21,221 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.header.logo__img {
+.container__header.logo__img {
   background: url("../assets/icons/logo.png") no-repeat;
   height: 50px;
   width: 50px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  margin-right: 30px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.nav a:hover {
+  color: #BDAE82;
+}
+
+.nav a:last-child {
+  margin-right: 0;
+}
+
+.hero__container {
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-position: center -90px;
+  height: 820px;
+}
+
+.about__hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+  padding-top: 160px;
+  padding-left: 80px;
+}
+
+.about__hero h1 {
+  font-family: "Merriweather", serif;
+  font-size: 60px;
+  color: #fff;
+  height: 100px;
+}
+
+.about__hero p {
+  font-family: "Inter", serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #fff;
+  height: 100px;
+}
+
+.about__hero button {
+  width: 220px;
+  height: 55px;
+  background: #BDAE82;
+  color: black;
+  border-radius: 10px;
+}
+
+.about__hero button:hover {
+  color: #fff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border: 4px solid black;
+}
+
+.skills__container {
+  padding: 100px 20px 0;
+  height: 420px;
+  background: black;
+}
+
+.title__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title__section h2 {
+  font-family: "Merriweather", serif;
+  font-size: 40px;
+  color: #BDAE82;
+  position: relative;
+}
+
+.title__section h2 span {
+  display: inline-block;
+  margin: 0 .4em;
+}
+
+.title__section h2 span::before, .title__section h2 span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  border-top: 2px solid #BDAE82;
+  margin-top: .6em;
+}
+
+.title__section h2 span::before {
+  margin-left: -102%;
+}
+
+.title__section h2 span::after {
+  margin-left: 2%;
+}
+
+.about__skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+.about__skills .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 320px;
+  margin-right: 20px;
+}
+
+.about__skills .skill:last-child {
+  margin-right: 0;
+}
+
+.about__skills .img__skill {
+  width: 62px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+.about__skills h3 {
+  font-size: 20px;
+  font-family: "Inter", serif;
+  color: #fff;
+}
+
+.about__skills p {
+  font-size: 16px;
+  font-family: "Inter", serif;
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.about__skills .photo__skill {
+  background: url("../assets/icons/camera 1.png") no-repeat center center;
+  background-size: contain;
+}
+
+.about__skills .video__skill {
+  background: url("../assets/icons/video 1.png") no-repeat center center;
+  background-size: contain;
+}
+
+.about__skills .retouch__skill {
+  background: url("../assets/icons/image 1.png") no-repeat center center;
+  background-size: contain;
+}
+
+.about__skills .audio__skill {
+  background: url("../assets/icons/mic 1.png") no-repeat center center;
+  background-size: contain;
+}
+
+.portfolio__container {
+  background: black;
+  height: 600px;
+  padding-top: 100px;
 }
 
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  scroll-behavior: smooth;
 }
 /*# sourceMappingURL=index.css.map */
