@@ -18,9 +18,89 @@
             text-decoration: none;
             color: #fff;
 
+            @media (max-width: 520px){
+                font-size: 14px;
+            }
+
             &:hover {
                 color: #BDAE82;
                 transition: all 0.3s ease-out;
+            }
+        }
+    }
+
+    .contact__school {
+        background: url('../assets/logo_rss/logo_rs.svg') no-repeat;
+        background-size: contain;
+        width: 100px;
+        height: 60px;
+
+        @media (max-width: 520px){
+            width: 80px;
+        }
+    }
+
+    .social__contact {
+        display: flex;
+
+        a {
+            width: 32px;
+            height: 32px;
+            margin-right: 20px;
+            cursor: pointer;
+
+            @media (max-width: 520px){
+                width: 26px;
+                height: 26px;
+                margin-right: 10px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .instagram {
+            background: url('../assets/icons/inst.png') no-repeat;
+            background-size: cover;
+
+            &:hover {
+                background: url('../assets/icons/inst_gold.png') no-repeat;
+                transition: all 0.5s ease-out;
+                transform: scale(1.3);
+            }
+        }
+
+        .facebook {
+            background: url('../assets/icons/fb.png') no-repeat;
+            background-size: cover;
+
+            &:hover {
+                background: url('../assets/icons/fb_gold.png') no-repeat;
+                transition: all 0.5s ease-out;
+                transform: scale(1.3);
+            }
+        }
+
+        .twitter {
+            background: url('../assets/icons/tw.png') no-repeat;
+            background-size: cover;
+
+            &:hover {
+                background: url('../assets/icons/tw_gold.png') no-repeat;
+                transition: all 0.5s ease-out;
+                transform: scale(1.3);
+            }
+        }
+
+        .pinterest {
+            background: url('../assets/icons/pinterest.png') no-repeat;
+            background-size: cover;
+
+            &:hover {
+                background: url('../assets/icons/pinterest_gold.png') no-repeat;
+                transition: all 0.5s ease-out;
+                transform: scale(1.3);
             }
         }
     }
