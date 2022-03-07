@@ -1,0 +1,27 @@
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    height: 100px;
+    padding: 0 20px;
+
+    .contact__author {
+        display: flex;
+        color: #fff;
+
+        p {
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+
+            &:hover {
+                color: #BDAE82;
+                transition: all 0.3s ease-out;
+            }
+        }
+    }
+}

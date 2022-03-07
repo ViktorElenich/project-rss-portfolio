@@ -24,6 +24,11 @@ $font-style: 'Inter', sans-serif;
         background: url('../assets/icons/logo.png') no-repeat;
         height: 50px;
         width: 50px;
+
+        &:hover {
+            background: url('../assets/icons/logo_hover.png') no-repeat;
+            transition: all 0.4s ease-out;
+        }
     }
 }
 

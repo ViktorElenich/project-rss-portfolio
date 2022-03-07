@@ -32,6 +32,12 @@
   width: 50px;
 }
 
+.container__header.logo__img:hover {
+  background: url("../assets/icons/logo_hover.png") no-repeat;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,6 +108,8 @@
   background: #BDAE82;
   color: black;
   border-radius: 10px;
+  font-size: 20px;
+  font-family: "Inter", serif;
 }
 
 .about__hero button:hover {
@@ -228,8 +236,327 @@
 
 .portfolio__container {
   background: black;
-  height: 600px;
   padding-top: 100px;
+}
+
+.portfolio__container .btn__block {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio__container .btn__block .btn__season {
+  width: 220px;
+  height: 55px;
+  background: black;
+  border: 2px solid #BDAE82;
+  color: #BDAE82;
+  margin-right: 5px;
+  font-size: 20px;
+  font-family: "Inter", serif;
+  -webkit-box-shadow: 0 2px 15px #bdae82;
+          box-shadow: 0 2px 15px #bdae82;
+}
+
+.portfolio__container .btn__block .btn__season:last-child {
+  margin-right: 0;
+}
+
+.portfolio__container .btn__block .btn__season:hover {
+  background: #BDAE82;
+  color: black;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.portfolio__container .btn__block .btn__season.btn__season__active {
+  background: #BDAE82;
+  color: black;
+}
+
+.portfolio__container .portfolio__wrapper {
+  margin-top: 50px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio__container .portfolio__wrapper .portfolio__img {
+  width: 450px;
+  height: 560px;
+}
+
+.video__container {
+  background: black;
+  padding-top: 100px;
+}
+
+.video__container .video__wrapper {
+  padding: 60px 10px 0;
+}
+
+.video__container .video__wrapper .video__player {
+  background-image: url("../assets/video-player.png");
+  width: 100%;
+  height: 705px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video__container .video__wrapper .video__player .btn__video {
+  background-image: url("../assets/icons/Play_hover.png");
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.video__container .video__wrapper .video__player .btn__video:hover {
+  background-image: url("../assets/icons/Play_hover_gold.png");
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.price__container {
+  background: black;
+  padding: 100px 10px 60px;
+}
+
+.price__container .price__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+.price__container .price__wrapper .block_price {
+  border: 4px solid #bdae82;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 450px;
+  margin-right: 15px;
+  padding: 45px 0;
+}
+
+.price__container .price__wrapper .block_price:last-child {
+  margin-right: 0;
+}
+
+.price__container .price__wrapper .block_price h3 {
+  font-size: 28px;
+  font-family: "Merriweather", serif;
+  margin-bottom: 20px;
+}
+
+.price__container .price__wrapper .block_price .coast {
+  font-size: 24px;
+  color: #bdae82;
+  margin-bottom: 20px;
+}
+
+.price__container .price__wrapper .block_price p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.price__container .price__wrapper .block_price button {
+  width: 220px;
+  height: 55px;
+  background: #bdae82;
+  color: black;
+  font-size: 20px;
+  font-family: "Inter", serif;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.price__container .price__wrapper .block_price button:hover {
+  color: #fff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.contact_container {
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: url("../assets/contacts.jpg") no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+.contact_container .contact__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 60px 20px 0 0;
+  width: 450px;
+}
+
+.contact_container .contact__wrapper h2 {
+  color: #bdae82;
+  font-size: 40px;
+  font-family: "Merriweather", serif;
+  margin-bottom: 40px;
+}
+
+.contact_container .contact__wrapper .contact__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact_container .contact__wrapper .contact__form input {
+  margin-bottom: 20px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #BDAE82;
+  padding: 5px 0 5px 20px;
+  font-family: "Inter", serif;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.contact_container .contact__wrapper .contact__form input::-webkit-input-placeholder {
+  color: #bdae82;
+}
+
+.contact_container .contact__wrapper .contact__form input:-ms-input-placeholder {
+  color: #bdae82;
+}
+
+.contact_container .contact__wrapper .contact__form input::-ms-input-placeholder {
+  color: #bdae82;
+}
+
+.contact_container .contact__wrapper .contact__form input::placeholder {
+  color: #bdae82;
+}
+
+.contact_container .contact__wrapper .contact__form input.contact__text {
+  height: 100px;
+  margin-bottom: 30px;
+}
+
+.contact_container .contact__wrapper .contact__form input.contact__text::-webkit-input-placeholder {
+  text-align: start;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+
+.contact_container .contact__wrapper .contact__form input.contact__text:-ms-input-placeholder {
+  text-align: start;
+  transform: translateY(-25px);
+}
+
+.contact_container .contact__wrapper .contact__form input.contact__text::-ms-input-placeholder {
+  text-align: start;
+  transform: translateY(-25px);
+}
+
+.contact_container .contact__wrapper .contact__form input.contact__text::placeholder {
+  text-align: start;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+
+.contact_container .contact__wrapper .contact__form button {
+  width: 220px;
+  height: 55px;
+  background: #bdae82;
+  color: black;
+  font-family: "Inter", serif;
+  font-size: 20px;
+}
+
+.contact_container .contact__wrapper .contact__form button:hover {
+  color: #fff;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+  height: 100px;
+  padding: 0 20px;
+}
+
+.footer__container .contact__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+}
+
+.footer__container .contact__author p {
+  margin-right: 10px;
+}
+
+.footer__container .contact__author a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__container .contact__author a:hover {
+  color: #BDAE82;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 * {
