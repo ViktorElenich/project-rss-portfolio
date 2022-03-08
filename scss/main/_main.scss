@@ -36,6 +36,10 @@ $font-inter: 'Inter', serif;
         color: #fff;
         height: 100px;
         letter-spacing: 1px;
+
+        @media (max-width: 560px){
+            font-size: 16px;
+        }
     }
 
     button {
@@ -59,7 +63,6 @@ $font-inter: 'Inter', serif;
 
 .skills__container {
     padding: 100px 20px 0;
-    background: black;
 }
 
 .title__section {
@@ -173,7 +176,6 @@ $font-inter: 'Inter', serif;
 }
 
 .portfolio__container {
-    background: black;
     padding-top: 100px;
 
     .title__section {
@@ -256,7 +258,6 @@ $font-inter: 'Inter', serif;
 }
 
 .video__container {
-    background: black;
     padding-top: 100px;
 
     .video__wrapper {
@@ -268,7 +269,6 @@ $font-inter: 'Inter', serif;
 
         .video__player {
             background-image: url('../assets/video-player.png');
-            background-size: contain;
             background-repeat: no-repeat;
             width: 100%;
             height: 705px;
@@ -307,7 +307,6 @@ $font-inter: 'Inter', serif;
 }
 
 .price__container {
-    background: black;
     padding: 100px 10px 60px;
 
     .price__wrapper {
@@ -387,7 +386,6 @@ $font-inter: 'Inter', serif;
 }
 
 .contact_container {
-    background: black;
     display: flex;
     justify-content: flex-end;
     background: url('../assets/contacts.jpg') no-repeat;

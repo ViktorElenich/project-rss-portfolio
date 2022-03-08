@@ -159,6 +159,33 @@
   }
 }
 
+.switch__theme {
+  background: url("../assets/theme/theme_light.png") no-repeat;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.switch__theme:hover {
+  -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+          filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.switch__theme.dark {
+  background: url("../assets/theme/theme_dark.png") no-repeat;
+  background-size: cover;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.switch__theme.dark:hover {
+  -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+          filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
 .hero__container {
   background-image: url("../assets/bg.png");
   background-repeat: no-repeat;
@@ -206,6 +233,12 @@
   letter-spacing: 1px;
 }
 
+@media (max-width: 560px) {
+  .about__hero p {
+    font-size: 16px;
+  }
+}
+
 .about__hero button {
   width: 220px;
   height: 55px;
@@ -227,7 +260,6 @@
 
 .skills__container {
   padding: 100px 20px 0;
-  background: black;
 }
 
 .title__section {
@@ -364,7 +396,6 @@
 }
 
 .portfolio__container {
-  background: black;
   padding-top: 100px;
 }
 
@@ -461,7 +492,6 @@
 }
 
 .video__container {
-  background: black;
   padding-top: 100px;
 }
 
@@ -477,7 +507,6 @@
 
 .video__container .video__wrapper .video__player {
   background-image: url("../assets/video-player.png");
-  background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   height: 705px;
@@ -524,7 +553,6 @@
 }
 
 .price__container {
-  background: black;
   padding: 100px 10px 60px;
 }
 
@@ -623,7 +651,6 @@
 }
 
 .contact_container {
-  background: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -761,7 +788,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: black;
   height: 100px;
   padding: 0 20px;
 }
@@ -889,5 +915,9 @@
           box-sizing: border-box;
   margin: 0;
   scroll-behavior: smooth;
+}
+
+body {
+  background: black;
 }
 /*# sourceMappingURL=index.css.map */
