@@ -1,2 +1,2 @@
 # project-rss-portfolio
-# deploy:
+# deploy: https://viktorelenich.github.io/project-rss-portfolio/
