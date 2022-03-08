@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/index.css">
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <title>Project-RSS-Portfolio-Photographer</title>
+    <title class="lang" key="title">Project-RSS-Portfolio-Photographer</title>
 </head>
 <body>
     <div class="container__body">
@@ -17,14 +17,21 @@
                 </div>
                 <nav class="nav">
                     <div class="nav__bar">
-                        <a href="#skills">Skills</a>
-                        <a href="#portfolio">Portfolio</a>
-                        <a href="#video">Video</a>
-                        <a href="#price">Price</a>
-                        <a href="#contact">Contact</a>
+                        <a href="#skills" class="lang" key="skills">Skills</a>
+                        <a href="#portfolio" class="lang" key="portfolio">Portfolio</a>
+                        <a href="#video" class="lang" key="video">Video</a>
+                        <a href="#price" class="lang" key="price">Price</a>
+                        <a href="#contact" class="lang" key="contact">Contact</a>
                     </div>
                 </nav>
-                <div class="switch__theme"></div>
+                <div class="switch">
+                    <div class="switch__lang">
+                        <span class="translate lang__item lang__active lang" id="en" key="lang-en">en</span>
+                        <span>/</span>
+                        <span class="translate lang__item lang" id="ru" key="lang-ru">ru</span>
+                    </div>
+                    <div class="switch__theme"></div>
+                </div>
                 <div class="header__burger">
                     <span></span>
                 </div>
@@ -34,37 +41,37 @@
             <section class="hero" id="hero">
                 <div class="container hero__container">
                     <div class="about__hero">
-                        <h1 class="name">Alexa Rise</h1>
-                        <p class="about__text">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
-                        <button class="btn__hero">Hire me</button>
+                        <h1 class="name lang" key="name">Alexa Rise</h1>
+                        <p class="about__text lang" key="text-about">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
+                        <button class="btn__hero lang" key="btn-hero">Hire me</button>
                     </div>
                 </div>
             </section>
             <section class="skills" id="skills">
                 <div class="container skills__container">
                     <div class="title__section">
-                        <h2><span>Skills</span></h2>
+                        <h2><span class="lang" key="skills">Skills</span></h2>
                     </div>
                     <div class="about__skills">
                         <div class="skill">
                             <div class="img__skill photo__skill"></div>
-                            <h3>Digital photography</h3>
-                            <p>High-quality photos in the studio and on the nature</p>
+                            <h3 class="lang" key="skill-photo">Digital photography</h3>
+                            <p class="lang" key="skill-photo-text">High-quality photos in the studio and on the nature</p>
                         </div>
                         <div class="skill">
                             <div class="img__skill video__skill"></div>
-                            <h3>Video shooting</h3>
-                            <p>Capture your moments so that they always stay with you</p>
+                            <h3 class="lang" key="skill-video">Video shooting</h3>
+                            <p class="lang" key="skill-video-text">Capture your moments so that they always stay with you</p>
                         </div>
                         <div class="skill">
                             <div class="img__skill retouch__skill"></div>
-                            <h3>Retouch</h3>
-                            <p>I strive to make photography surpass reality</p>
+                            <h3 class="lang" key="skill-retouch">Retouch</h3>
+                            <p class="lang" key="skill-retouch-text">I strive to make photography surpass reality</p>
                         </div>
                         <div class="skill">
                             <div class="img__skill audio__skill"></div>
-                            <h3>Audio</h3>
-                            <p>Professional sounds recording for video, advertising, portfolio</p>
+                            <h3 class="lang" key="skill-audio">Audio</h3>
+                            <p class="lang" key="skill-audio-text">Professional sounds recording for video, advertising, portfolio</p>
                         </div>
                     </div>
                 </div>
@@ -72,13 +79,13 @@
             <section class="portfolio" id="portfolio">
                 <div class="container portfolio__container">
                     <div class="title__section">
-                        <h2><span>Portfolio</span></h2>
+                        <h2><span class="lang" key="portfolio">Portfolio</span></h2>
                     </div>
                     <div class="btn__block">
-                        <button class="btn__season" data-season="winter">Winter</button>
-                        <button class="btn__season" data-season="spring">Spring</button>
-                        <button class="btn__season" data-season="summer">Summer</button>
-                        <button class="btn__season btn__season__active" data-season="autumn">Autumn</button>
+                        <button class="btn__season lang" key="season-winter">Winter</button>
+                        <button class="btn__season lang" key="season-spring">Spring</button>
+                        <button class="btn__season lang" key="season-summer">Summer</button>
+                        <button class="btn__season lang btn__season__active" key="season-autumn">Autumn</button>
                     </div>
                     <div class="portfolio__wrapper">
                         <img class="portfolio__img" src="./assets/autumn/1.png" alt="image">
@@ -93,7 +100,7 @@
             <section class="video" id="video">
                 <div class="container video__container">
                     <div class="title__section">
-                        <h2><span>Video</span></h2>
+                        <h2><span class="lang" key="video">Video</span></h2>
                     </div>
                     <div class="video__wrapper">
                         <div class="video__player">
@@ -105,26 +112,44 @@
             <section class="price" id="price">
                 <div class="container price__container">
                     <div class="title__section">
-                        <h2><span>Price</span></h2>
+                        <h2><span class="lang" key="price">Price</span></h2>
                     </div>
                     <div class="price__wrapper">
                         <div class="block_price">
-                            <h3>Standard</h3>
+                            <h3 class="lang" key="block-price-standard">Standard</h3>
                             <p class="coast">500 $</p>
-                            <p>One location<br>120 photos in color<br>12 photos in retouch<br>Readiness 2-3 weeks<br>Make up, visage</p>
-                            <button>Order shooting</button>
+                            <p class="block_price_text">
+                                <span class="lang" key="block-price-standard-text-1">One location</span>
+                                <span class="lang" key="block-price-standard-text-2">120 photos in color</span>
+                                <span class="lang" key="block-price-standard-text-3">12 photos in retouch</span>
+                                <span class="lang" key="block-price-standard-text-4">Readiness 2-3 weeks</span>
+                                <span class="lang" key="block-price-standard-text-5">Make up, visage</span>
+                            </p>
+                            <button class="lang" key="block-price-btn">Order shooting</button>
                         </div>
                         <div class="block_price">
-                            <h3>Premium</h3>
+                            <h3 class="lang" key="block-price-premium">Premium</h3>
                             <p class="coast">700 $</p>
-                            <p>One or two locations<br>200 photos in color<br>20 photos in retouch<br>Readiness 1-2 weeks<br>Make up, visage</p>
-                            <button>Order shooting</button>
+                            <p class="block_price_text">
+                                <span class="lang" key="block-price-premium-text-1">One or two locations</span>
+                                <span class="lang" key="block-price-premium-text-2">200 photos in color</span>
+                                <span class="lang" key="block-price-premium-text-3">20 photos in retouch</span>
+                                <span class="lang" key="block-price-premium-text-4">Readiness 1-2 weeks</span>
+                                <span class="lang" key="block-price-premium-text-5">Make up, visage</span>
+                            </p>
+                            <button class="lang" key="block-price-btn">Order shooting</button>
                         </div>
                         <div class="block_price">
-                            <h3>Gold</h3>
+                            <h3 class="lang" key="block-price-gold">Gold</h3>
                             <p class="coast">1000 $</p>
-                            <p>Three locations or more<br>300 photos in color<br>50 photos in retouch<br>Readiness 1 week<br>Make up, visage, hairstyle</p>
-                            <button>Order shooting</button>
+                            <p class="block_price_text">
+                                <span class="lang" key="block-price-gold-text-1">Three locations or more</span>
+                                <span class="lang" key="block-price-gold-text-2">300 photos in color</span>
+                                <span class="lang" key="block-price-gold-text-3">50 photos in retouch</span>
+                                <span class="lang" key="block-price-gold-text-4">Readiness 1 week</span>
+                                <span class="lang" key="block-price-gold-text-5">Make up, visage, hairstyle</span>
+                            </p>
+                            <button class="lang" key="block-price-btn">Order shooting</button>
                         </div>
                     </div>
                 </div>
@@ -132,12 +157,12 @@
             <section class="contact" id="contact">
                 <div class="container contact_container">
                     <div class="contact__wrapper">
-                        <h2>Contact me</h2>
+                        <h2 class="lang" key="contact-me">Contact me</h2>
                         <div class="contact__form">
                             <input type="email" class="contact__email" id="" placeholder="E-mail">
                             <input type="tel" class="contact__tell" id="" placeholder="Phone">
                             <input type="text" class="contact__text" id="" placeholder="Message">
-                            <button>Send message</button>
+                            <button class="lang" key="contact-btn">Send message</button>
                         </div>
                     </div>
                 </div>
@@ -148,7 +173,7 @@
                 <div class="contact__author">
                     <p>©</p>
                     <p>2022</p>
-                    <a href="https://github.com/ViktorElenich" target="_blank">Viktor Elenich</a>
+                    <a href="https://github.com/ViktorElenich" target="_blank" class="lang" key="author-name">Viktor Elenich</a>
                 </div>
                 <a a href="https://rollingscopes.com/" target="_blank" class="contact__school"></a>
                 <div class="social__contact">
@@ -160,6 +185,7 @@
             </div>
         </footer>
         <script type="module" src="./index.js"></script>
+        <script src="js/jquery.min.js"></script>
     </div>
 </body>
 </html>

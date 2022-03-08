@@ -139,6 +139,12 @@ $font-style: 'Inter', sans-serif;
     }
 }
 
+.switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .switch__theme {
     background: url('../assets/theme/theme_light.png') no-repeat;
     background-size: cover;
@@ -158,6 +164,21 @@ $font-style: 'Inter', sans-serif;
 
         &:hover {
             filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+        }
+    }
+}
+
+.switch__lang {
+    font-family: $font-style;
+    color: #fff;
+    font-size: 22px;
+    margin-right: 15px;
+
+    .lang__item {
+        cursor: pointer;
+
+        &.lang__active {
+            color: #BDAE82;
         }
     }
 }

@@ -159,6 +159,18 @@
   }
 }
 
+.switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .switch__theme {
   background: url("../assets/theme/theme_light.png") no-repeat;
   background-size: cover;
@@ -184,6 +196,21 @@
 .switch__theme.dark:hover {
   -webkit-filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
           filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.switch__lang {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-size: 22px;
+  margin-right: 15px;
+}
+
+.switch__lang .lang__item {
+  cursor: pointer;
+}
+
+.switch__lang .lang__item.lang__active {
+  color: #BDAE82;
 }
 
 .hero__container {
@@ -221,6 +248,12 @@
 @media (max-width: 768px) {
   .about__hero h1 {
     font-size: 50px;
+  }
+}
+
+@media (max-width: 560px) {
+  .about__hero h1 {
+    font-size: 40px;
   }
 }
 
@@ -287,6 +320,12 @@
   }
 }
 
+@media (max-width: 500px) {
+  .title__section h2 {
+    font-size: 28px;
+  }
+}
+
 .title__section h2 span {
   display: inline-block;
   margin: 0.4em;
@@ -295,13 +334,13 @@
 .title__section h2 span::before, .title__section h2 span::after {
   content: '';
   position: absolute;
-  width: 100%;
+  width: 85%;
   border-top: 2px solid #BDAE82;
   margin-top: .6em;
 }
 
 .title__section h2 span::before {
-  margin-left: -102%;
+  margin-left: -87%;
 }
 
 .title__section h2 span::after {
@@ -355,6 +394,12 @@
   }
 }
 
+@media (max-width: 715px) {
+  .about__skills .skill {
+    margin-right: 0;
+  }
+}
+
 .about__skills .img__skill {
   width: 62px;
   height: 50px;
@@ -400,11 +445,11 @@
 }
 
 .portfolio__container .title__section span::before, .portfolio__container .title__section span::after {
-  width: 85%;
+  width: 55%;
 }
 
 .portfolio__container .title__section span::before {
-  margin-left: -87%;
+  margin-left: -57%;
 }
 
 .portfolio__container .btn__block {
@@ -608,7 +653,14 @@
   margin-bottom: 20px;
 }
 
-.price__container .price__wrapper .block_price p {
+.price__container .price__wrapper .block_price .block_price_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 18px;
   line-height: 30px;
 }
@@ -762,6 +814,7 @@
   font-family: "Inter", serif;
   font-size: 20px;
   border: 2px solid #BDAE82;
+  cursor: pointer;
 }
 
 .contact_container .contact__wrapper .contact__form button:hover {
