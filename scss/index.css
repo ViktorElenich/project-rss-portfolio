@@ -361,6 +361,13 @@
   margin-top: 60px;
 }
 
+@media (max-width: 1438px) {
+  .about__skills {
+    -webkit-column-gap: 240px;
+            column-gap: 240px;
+  }
+}
+
 @media (max-width: 768px) {
   .about__skills {
     -ms-flex-wrap: wrap;
